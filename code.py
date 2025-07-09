@@ -5,8 +5,8 @@ import pandas as pd
 
 
 
-username = st.secrets["credentials"]["username"]
-password = st.secrets["credentials"]["password"]
+correct_username = st.secrets["credentials"]["username"]
+correct_password = st.secrets["credentials"]["password"]
 
 # Create session state vars if not exist
 if "authenticated" not in st.session_state:
@@ -21,7 +21,7 @@ if not st.session_state.authenticated:
     login_button = st.button("Login")
 
     if login_button:
-        if username == CORRECT_USERNAME and password == CORRECT_PASSWORD:
+        if username == correct_username and password == correct_password:
             st.session_state.authenticated = True
             st.success("Login successful!")
             st.rerun()
