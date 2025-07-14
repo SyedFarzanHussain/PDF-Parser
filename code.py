@@ -4,34 +4,6 @@ import re
 import pandas as pd
 
 
-'''
-correct_username = st.secrets["credentials"]["username"]
-correct_password = st.secrets["credentials"]["password"]
-
-# Create session state vars if not exist
-if "authenticated" not in st.session_state:
-    st.session_state.authenticated = False
-
-# Login form if not authenticated
-if not st.session_state.authenticated:
-    st.title("Login Required")
-
-    username = st.text_input("Enter User ID")
-    password = st.text_input("Enter Password", type="password")
-    login_button = st.button("Login")
-
-    if login_button:
-        if username == correct_username and password == correct_password:
-            st.session_state.authenticated = True
-            st.success("Login successful!")
-            st.rerun()
-        else:
-            st.error("Invalid credentials. Try again.")
-
-    st.stop()
-
-'''
-
 st.title("PDF Product Code & Price Extractor")
 
 # Selection option
