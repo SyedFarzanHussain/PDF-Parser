@@ -4,7 +4,7 @@ import re
 import pandas as pd
 
 
-
+'''
 correct_username = st.secrets["credentials"]["username"]
 correct_password = st.secrets["credentials"]["password"]
 
@@ -29,6 +29,8 @@ if not st.session_state.authenticated:
             st.error("Invalid credentials. Try again.")
 
     st.stop()
+
+'''
 
 st.title("PDF Product Code & Price Extractor")
 
